@@ -63,6 +63,10 @@ header img {
     flex-direction: column;
     gap: 80px;
 }
+.fonction div {
+    display: flex;
+    align-items: center;
+}
 .restaurant {
     background-color: #f6f6f6;
     width: 100%;

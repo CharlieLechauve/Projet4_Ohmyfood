@@ -94,6 +94,11 @@ header {
     width: 100%;
     @include flex-column;
     gap: 80px;
+
+    div {
+        display:flex;
+        align-items: center;
+    }
 }
 
 .restaurant {
