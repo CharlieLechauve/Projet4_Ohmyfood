@@ -1,0 +1,47 @@
+/*** Reset CSS ***/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/*** Couleurs principales ***/
+$primary-color:#9356dc;
+$secondary-color:#ff79da;
+$tertiary-color:#99e2d0;
+
+/*** Couleurs Background**/
+$bg-color: #F6F6F6;
+$bg-location-color: #EAEAEA;
+$bg-footer-color: #353535;
+$bg-card-color: #FFFFFF;
+
+/*** Couleur dégradée ***/
+@mixin degraded {
+    background: linear-gradient($secondary-color $primary-color)
+}
+
+/*** Shadows ***/
+@mixin header-shadow {
+    box-shadow: 0px 2px 4px 0px #00000026;
+}
+
+@mixin button-shadow {
+    box-shadow: 0px 4px 15px 0px #0000001A;
+}
+
