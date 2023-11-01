@@ -65,12 +65,8 @@ header {
     height: 63px;
     @include header-shadow;
 
-    div {
-        width: 250px;
-    }
-
     img {
-        width: 197px;
+        width: auto;
         height: 36px;
     }
 }
