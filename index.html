@@ -5,43 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="stylesheet" href="./assets/header.css">
 </head>
 
 <body>
-    <header>
-        <a> <i class="fa-solid fa-arrow-left"></i> </a>
-        <img src="./assets/ohmyfood@2x.svg">
+    <header class="index__header">
+        <img src="./assets/ohmyfood.png">
     </header>
 
     <main>
-        <div class="header__location">
-            <i class="fa-solid fa-location-dot"></i>
+        <div class="location">
+            <div><i class="fa-solid fa-location-dot"></i></div>
             <p> Paris, Belleville </p>
         </div>
 
         <section class="exploration">
             <h2> Réservez le menu qui vous convient </h2>
             <p> Découvrez des restaurants d'exception, sélectionnés par nos soins </p>
-            <a class="main-color-button" href="#"> Explorez nos restaurants </a>
+            <a class="button__degraded" href="#"> Explorez nos restaurants </a>
         </section>
 
         <section class="fonction">
             <h2> Fonctionnement </h2>
             <div class="selection">
                 <a class="main-color-circle"> 1 </a>
-                <i class="fa-solid fa-mobile-screen-button"></i>
+                <div><i class="fa-solid fa-mobile-screen-button"></i></div>
                 <h3> Choississez un restaurant </h3>
             </div>
             <div class="composition">
                 <a class="main-color-circle"> 2 </a>
-                <i class="fa-solid fa-list"></i>
+                <div><i class="fa-solid fa-list"></i></div>
                 <h3> Composez votre menu </h3>
             </div>
             <div class="tasting">
                 <a class="main-color-circle"> 1 </a>
-                <i class="fa-solid fa-store"></i>
+                <div><i class="fa-solid fa-store"></i></div>
                 <h3> Dégustez au restaurant </h3>
             </div>
         </section>
@@ -60,7 +62,7 @@
                             <h3> La palette du goût </h3>
                             <p> Ménilmontant </p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <div><i class="fa-regular fa-heart"></i></div>
                     </div>
                 </article>
             </a>
@@ -76,7 +78,7 @@
                             <h3> La note enchantée </h3>
                             <p> Charonne </p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <div><i class="fa-regular fa-heart"></i></div>
                     </div>
                 </article>
             </a>
@@ -90,7 +92,7 @@
                             <h3> A la française </h3>
                             <p> Cité Rouge </p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <div><i class="fa-regular fa-heart"></i></div>
                     </div>
                 </article>
             </a>
@@ -110,26 +112,25 @@
             </a>
             
         </section>
-
-        <footer>
-            <img src="./assets/ohmyfood@2x.svg">
-            <div class="footer__nav">
-                <a class="nav--logo">
-                    <i class="fa-solid fa-utensils"></i>
-                    <p> Proposer un restaurant </p>
-                </a>
-                <a class="nav--logo">
-                    <i class="fa-solid fa-handshake-angle"></i>
-                    <p> Devenir partenaire </p>
-                </a>
-                <a>
-                    <p> Mentions légales </p>
-                </a>
-                <a>
-                    <p> Contact </p>
-                </a>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <img src="./assets/ohmyfood.png">
+        <div class="nav">
+            <a class="nav__icon" href="#">
+                <div><i class="fa-solid fa-utensils"></i></div>
+                <p> Proposer un restaurant </p>
+            </a>
+            <a class="nav__icon" href="#">
+                <div><i class="fa-solid fa-handshake-angle"></i></div>
+                <p> Devenir partenaire </p>
+            </a>
+            <a href="#">
+                <p> Mentions légales </p>
+            </a>
+            <a href="#">
+                <p> Contact </p>
+            </a>
+        </div>
+    </footer>
 </body>
 

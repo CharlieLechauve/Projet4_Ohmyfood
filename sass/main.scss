@@ -16,6 +16,11 @@ img {
     object-fit: cover;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /*** Couleurs principales ***/
 $primary-color:#9356dc;
 $secondary-color:#ff79da;
@@ -24,8 +29,8 @@ $tertiary-color:#99e2d0;
 /*** Couleurs Background**/
 $bg-color: #F6F6F6;
 $bg-location-color: #EAEAEA;
-$bg-footer-color: #353535;
 $bg-card-color: #FFFFFF;
+$bg-footer-color: #353535;
 
 /*** Couleur dégradée ***/
 @mixin degraded {
@@ -34,10 +39,90 @@ $bg-card-color: #FFFFFF;
 
 /*** Shadows ***/
 @mixin header-shadow {
-    box-shadow: 0px 2px 4px 0px #00000026;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 @mixin button-shadow {
     box-shadow: 0px 4px 15px 0px #0000001A;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    width: 100%;
+    @include flex-column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-card-color;
+    width: 100%;
+    height: 63px;
+    @include header-shadow;
+
+    img {
+        width: 197px;
+        height: 36px;
+    }
+}
+
+.location {
+    background-color: $bg-location-color;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exploration {
+    background-color: $bg-color;
+    width: 100%;
+    @include flex-column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonction {
+    background-color: $bg-card-color;
+    width: 100%;
+    @include flex-column;
+    gap: 80px;
+}
+
+.restaurant {
+    background-color: $bg-color;
+    width: 100%;
+    @include flex-column;
+}
+
+footer {
+    background-color: $bg-footer-color;
+    width: 100%;
+    @include flex-column;
+    gap: 16px;
+    padding: 22px 25px 22px 25px;
+    color:white;
+
+    img {
+       width: 139px;
+       height: 27px;
+       color: white; 
+    }
+
+    .nav {
+       @include flex-column;
+       gap: 7px;
+
+       &__icon {
+        display: flex;
+        align-items: center;
+       }
+
+    }
 }
 
