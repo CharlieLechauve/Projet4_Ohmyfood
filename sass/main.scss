@@ -65,6 +65,10 @@ header {
     height: 63px;
     @include header-shadow;
 
+    div {
+        width: 250px;
+    }
+
     img {
         width: 197px;
         height: 36px;
