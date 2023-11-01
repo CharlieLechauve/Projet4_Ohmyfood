@@ -4,19 +4,20 @@ header {
     background-color: white;
     width: 100%;
     height: 63px;
+    @include header-shadow;
 
-    &a {
+    a {
         width:30px;
         height: 30px;
 
-        &i {
+        i {
             width: 17px;
             height: 16px;
             margin: 7px 0 0 6px;
         }
     }
 
-    &img {
+    img {
         width: 197px;
         height: 36px;
         margin: 14px 0 0 89px;
