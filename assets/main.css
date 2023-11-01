@@ -17,6 +17,10 @@ a {
     text-decoration: none;
     color: black;
 }
+h1 {
+    font: italic 30px;
+    font-family: 'Shrikhand', serif;
+}
 /*** Couleurs principales ***/
 /*** Couleurs Background**/
 /*** Couleur dégradée ***/
@@ -82,14 +86,16 @@ footer {
     padding: 22px 25px 22px 25px;
     color: white;
 }
-footer img {
-    width: 139px;
-    height: 27px;
+footer h2 {
+    font-family: 'Shrikhand', serif;
+}
+footer i, footer p {
     color: white;
 }
 footer .nav {
     display: flex;
     flex-direction: column;
+    color: white;
     gap: 7px;
 }
 footer .nav__icon {

@@ -21,6 +21,11 @@ a {
     color: black;
 }
 
+h1 {
+    font: italic 30px;
+    font-family: 'Shrikhand', serif;
+}
+
 /*** Couleurs principales ***/
 $primary-color:#9356dc;
 $secondary-color:#ff79da;
@@ -115,14 +120,17 @@ footer {
     padding: 22px 25px 22px 25px;
     color:white;
 
-    img {
-       width: 139px;
-       height: 27px;
-       color: white; 
+    h2 {
+        font-family: 'Shrikhand', serif;
+    }
+
+    i, p {
+        color: white;
     }
 
     .nav {
        @include flex-column;
+       color:white;
        gap: 7px;
 
        &__icon {
