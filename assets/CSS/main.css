@@ -93,6 +93,9 @@ footer {
     padding: 22px 25px 22px 25px;
     color: white;
 }
+footer h2 {
+    font-family: 'Shrikhand', sans-serif;
+}
 footer i, footer p {
     color: white;
 }
