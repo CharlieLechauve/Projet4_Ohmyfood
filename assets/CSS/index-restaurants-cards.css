@@ -33,12 +33,14 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 29px;
     background-color: #99e2d0;
+    padding: 13px;
 }
 .index-restaurants__cards .card .new h3 {
     color: #008766;
+    text-align: center;
 }
 .index-restaurants__cards .card__content {
     height: 25%;
