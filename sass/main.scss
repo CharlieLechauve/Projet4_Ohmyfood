@@ -119,12 +119,6 @@ body {
     }
 }
 
-.restaurant {
-    background-color: $bg-color;
-    width: 100%;
-    @include flex-column;
-}
-
 footer {
     background-color: $bg-footer-color;
     width: 100%;
@@ -145,6 +139,7 @@ footer {
        &__icon {
         display: flex;
         align-items: center;
+        gap: 10px;
        }
 
     }
