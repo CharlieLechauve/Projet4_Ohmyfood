@@ -7,8 +7,9 @@
 .button__degraded h3 {
     color: white;
     margin-top: 13px;
+    text-align: center;
 }
 .button__degraded:hover {
-    filter: brightness(1.5);
+    filter: brightness(1.1);
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.35);
 }
