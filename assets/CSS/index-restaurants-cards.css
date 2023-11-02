@@ -35,12 +35,13 @@
     right: 10px;
     width: 80px;
     height: 29px;
+    border-radius: 2px;
     background-color: #99e2d0;
-    padding: 13px;
 }
 .index-restaurants__cards .card .new h3 {
     color: #008766;
     text-align: center;
+    margin: 7px 9px 7px 9px;
 }
 .index-restaurants__cards .card__content {
     height: 25%;
