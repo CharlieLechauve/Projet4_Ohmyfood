@@ -21,11 +21,6 @@ a {
     color: black;
 }
 
-h1 {
-    font: italic 30px;
-    font-family: 'Shrikhand', serif;
-}
-
 /*** Couleurs principales ***/
 $primary-color:#9356dc;
 $secondary-color:#ff79da;
@@ -42,11 +37,6 @@ $bg-footer-color: #353535;
     background: linear-gradient($secondary-color $primary-color)
 }
 
-/*** Shadows ***/
-@mixin header-shadow {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-}
-
 @mixin button-shadow {
     box-shadow: 0px 4px 15px 0px #0000001A;
 }
@@ -56,11 +46,6 @@ $bg-footer-color: #353535;
     flex-direction: column;
 }
 
-body {
-    width: 100%;
-    @include flex-column;
-}
-
 header {
     display: flex;
     align-items: center;
@@ -68,11 +53,37 @@ header {
     background-color: $bg-card-color;
     width: 100%;
     height: 63px;
-    @include header-shadow;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.15);
+    margin-bottom: 3px;
+}
 
-    img {
-        width: auto;
-        height: 36px;
+body {
+    width: 100%;
+    @include flex-column;
+
+    h1 {
+        font-family: 'Shrikhand', sans-serif;
+        font: italic 30px;
+        font-weight: 400;
+    }
+
+    h2, h3, p {
+        font-family: 'roboto', sans-serif;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500; 
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300; 
     }
 }
 
@@ -92,13 +103,19 @@ header {
     @include flex-column;
     justify-content: center;
     align-items: center;
+    padding: 30px 0 30px 0;
+
+    div {
+        width: 275px;
+        height: 68px;
+    }
 }
 
 .fonction {
     background-color: $bg-card-color;
     width: 100%;
     @include flex-column;
-    gap: 80px;
+    gap: 30px;
 
     div {
         display:flex;
@@ -119,10 +136,6 @@ footer {
     gap: 16px;
     padding: 22px 25px 22px 25px;
     color:white;
-
-    h2 {
-        font-family: 'Shrikhand', serif;
-    }
 
     i, p {
         color: white;

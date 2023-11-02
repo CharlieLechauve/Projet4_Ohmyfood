@@ -1,0 +1,42 @@
+$bg-color: #F6F6F6;
+$bg-card-color: #FFFFFF;
+
+@mixin button-shadow {
+    box-shadow: 0 4px 15px 0 #0000001A;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurants {
+    @include flex-column;
+    gap: 18px;
+    background-color: $bg-color;
+
+    &__card {
+        @include flex-column;
+        @include button-shadow;
+        background-color: $bg-card-color;
+        border-radius: 15px;
+        padding: 0 13px 0 13px 0;
+        width: 80%;
+        height: 251px; 
+
+        &--pic {
+            width: 100%;
+            height: 70%;
+        }
+
+        &--content {
+            display:flex;
+            justify-content: space-between;
+            height: 30%;
+
+            p {
+                font-size: 17px;
+            }
+        }
+    }
+}

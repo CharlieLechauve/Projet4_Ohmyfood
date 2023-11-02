@@ -1,0 +1,35 @@
+$bg-color: #F6F6F6;
+$primary-color:#9356dc;
+$bg-card-color: #FFFFFF;
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.fonction {
+    background-color: $bg-card-color;
+    width: 100%;
+    @include flex-column;
+    gap: 30px;
+
+    &__button {
+        display:flex;
+        align-items: center;
+        width: 322px;
+        height: 72px;
+        border-radius: 20px;
+        background-color: $bg-color;
+
+        &--circle {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: $primary-color;
+
+            h3 {
+                color:white;
+            }
+        }
+    }
+}

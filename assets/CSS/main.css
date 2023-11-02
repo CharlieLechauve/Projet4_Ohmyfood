@@ -17,19 +17,9 @@ a {
     text-decoration: none;
     color: black;
 }
-h1 {
-    font: italic 30px;
-    font-family: 'Shrikhand', serif;
-}
 /*** Couleurs principales ***/
 /*** Couleurs Background**/
 /*** Couleur dégradée ***/
-/*** Shadows ***/
-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 header {
     display: flex;
     align-items: center;
@@ -37,11 +27,33 @@ header {
     background-color: #fff;
     width: 100%;
     height: 63px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 3px;
 }
-header img {
-    width: auto;
-    height: 36px;
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body h1 {
+    font-family: 'Shrikhand', sans-serif;
+    font: italic 30px;
+    font-weight: 400;
+}
+body h2, body h3, body p {
+    font-family: 'roboto', sans-serif;
+}
+body h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+body h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+body p {
+    font-size: 18px;
+    font-weight: 300;
 }
 .location {
     background-color: #eaeaea;
@@ -59,17 +71,18 @@ header img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 30px 0 30px 0;
 }
-.fonction {
-    background-color: #fff;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+.exploration__title {
+    width: 275px;
+    height: 68px;
+    text-align: center;
 }
-.fonction div {
-    display: flex;
-    align-items: center;
+.exploration_paragraphe {
+    width: 315px;
+    height: 46px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 .restaurant {
     background-color: #f6f6f6;
@@ -85,9 +98,6 @@ footer {
     gap: 16px;
     padding: 22px 25px 22px 25px;
     color: white;
-}
-footer h2 {
-    font-family: 'Shrikhand', serif;
 }
 footer i, footer p {
     color: white;

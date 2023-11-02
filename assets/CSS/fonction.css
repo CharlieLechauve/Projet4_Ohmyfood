@@ -1,0 +1,24 @@
+.fonction {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.fonction__button {
+    display: flex;
+    align-items: center;
+    width: 322px;
+    height: 72px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+}
+.fonction__button--circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #9356dc;
+}
+.fonction__button--circle h3 {
+    color: white;
+}
