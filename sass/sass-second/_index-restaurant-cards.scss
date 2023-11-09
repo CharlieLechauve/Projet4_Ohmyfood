@@ -1,17 +1,3 @@
-$bg-color: #F6F6F6;
-$bg-card-color: #FFFFFF;
-$tertiary-color:#99e2d0;
-$tertiary-text-color: #008766;
-
-@mixin button-shadow {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-}
-
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-}
-
 .index-restaurants {
     @include flex-column;
     background-color: $bg-color;
@@ -20,11 +6,10 @@ $tertiary-text-color: #008766;
 
     &__cards {
         @include flex-column;
-        align-items: center;
         gap: 20px;
 
         a {
-            width: 80%;
+            width: 100%;
         }
 
         .card {
@@ -56,6 +41,10 @@ $tertiary-text-color: #008766;
                     text-align: center;
                     margin: 5px 0 5px 0;
                 }
+            }
+
+            .old {
+                position: none;
             }
 
             &__content {

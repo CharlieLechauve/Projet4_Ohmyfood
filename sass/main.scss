@@ -1,4 +1,8 @@
 /**** Reset CSS ****/ 
+* {
+    box-sizing: border-box;
+}
+
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -25,6 +29,7 @@ a {
 $primary-color:#9356dc;
 $secondary-color:#ff79da;
 $tertiary-color:#99e2d0;
+$tertiary-text-color: #008766;
 
 /*** Couleurs Background**/
 $bg-color: #F6F6F6;
@@ -34,7 +39,7 @@ $bg-footer-color: #353535;
 
 /*** Couleur dégradée ***/
 @mixin degraded {
-    background: linear-gradient($secondary-color $primary-color)
+    background: linear-gradient($secondary-color, $primary-color);
 }
 
 @mixin button-shadow {
@@ -76,7 +81,7 @@ body {
     }
 }
 
-@import "sass-second/header", "sass-second/fonction";
+@import "sass-second/header", "sass-second/fonction", "sass-second/restaurant--menu";
 
 .location {
     background-color: $bg-location-color;

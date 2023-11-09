@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /**** Reset CSS ****/
+* {
+  box-sizing: border-box;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -62,21 +66,31 @@ header {
   margin-bottom: 3px;
 }
 
+.header__restaurant {
+  position: relative;
+  box-shadow: 0 0 0 0 transparent;
+}
+.header__restaurant--arrow {
+  position: absolute;
+  left: 30px;
+}
+
 .fonction {
   background-color: #FFFFFF;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 30px;
+  padding: 24px;
 }
 .fonction__button {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: 72px;
   border-radius: 20px;
   background-color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   gap: 40px;
 }
 .fonction__button--circle {
@@ -97,6 +111,64 @@ header {
 }
 .fonction .fa-color {
   color: #9356dc;
+}
+
+.restaurant img {
+  width: 100%;
+  height: 275px;
+}
+.restaurant section {
+  width: 100%;
+}
+.restaurant__menu {
+  background-color: #F6F6F6;
+  border-radius: 25px 25px 0 0;
+  padding: 30px 20px 30px 20px;
+  position: relative;
+  top: -30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.restaurant__menu--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.restaurant__menu--title .card__content--heart {
+  position: relative;
+  left: -30px;
+  width: 22px;
+  height: 21px;
+}
+.restaurant__menu--submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurant__menu--submenu--title {
+  width: 40px;
+  height: 32px;
+  border-bottom: solid 3px #99e2d0;
+  padding-bottom: 5px;
+}
+.restaurant__menu--submenu--card {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  height: 69px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+}
+.restaurant__menu--submenu--card--price {
+  position: relative;
+  top: 15px;
 }
 
 .location {
@@ -136,7 +208,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 22px 25px 22px 25px;
+  padding: 22px 0 22px 25px;
   color: white;
 }
 footer h2 {
@@ -155,6 +227,10 @@ footer .nav__icon {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.restaurant__footer {
+  margin-top: -30px;
 }
 
 .button__degraded {
@@ -184,16 +260,15 @@ footer .nav__icon {
 .index-restaurants__cards {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
 }
 .index-restaurants__cards a {
-  width: 80%;
+  width: 100%;
 }
 .index-restaurants__cards .card {
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   background-color: #FFFFFF;
   border-radius: 15px;
   height: 251px;
@@ -218,6 +293,9 @@ footer .nav__icon {
   color: #008766;
   text-align: center;
   margin: 5px 0 5px 0;
+}
+.index-restaurants__cards .card .old {
+  position: none;
 }
 .index-restaurants__cards .card__content {
   height: 25%;
