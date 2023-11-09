@@ -1,4 +1,4 @@
-/*** Reset CSS ***/
+/**** Reset CSS ****/ 
 html {
     box-sizing: border-box;
     font-size: 16px;
@@ -46,17 +46,6 @@ $bg-footer-color: #353535;
     flex-direction: column;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $bg-card-color;
-    width: 100%;
-    height: 63px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    margin-bottom: 3px;
-}
-
 body {
     width: 100%;
     @include flex-column;
@@ -86,6 +75,8 @@ body {
         font-weight: 300; 
     }
 }
+
+@import "sass-second/header", "sass-second/fonction";
 
 .location {
     background-color: $bg-location-color;
@@ -119,33 +110,4 @@ body {
     }
 }
 
-footer {
-    background-color: $bg-footer-color;
-    width: 100%;
-    @include flex-column;
-    gap: 16px;
-    padding: 22px 25px 22px 25px;
-    color:white;
-
-    h2{
-        font-family: 'Shrikhand', sans-serif;
-    }
-
-    i, p {
-        color: white;
-    }
-
-    .nav {
-       @include flex-column;
-       color:white;
-       gap: 7px;
-
-       &__icon {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-       }
-
-    }
-}
-
+@import "sass-second/footer", "sass-second/button-degraded", "sass-second/index-restaurant-cards";

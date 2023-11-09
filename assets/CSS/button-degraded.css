@@ -3,6 +3,7 @@
     height: 50px;
     border-radius: 25px;
     background: linear-gradient(#ff79da, #9356dc);
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 .button__degraded h3 {
     color: white;

@@ -1,0 +1,230 @@
+@charset "UTF-8";
+/**** Reset CSS ****/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*** Couleurs principales ***/
+/*** Couleurs Background**/
+/*** Couleur dégradée ***/
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body h1 {
+  font-family: "Shrikhand", sans-serif;
+  font: italic 30px;
+  font-weight: 400;
+}
+body h2, body h3, body p {
+  font-family: "roboto", sans-serif;
+}
+body h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+body h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+body p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 63px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  margin-bottom: 3px;
+}
+
+.fonction {
+  background-color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+.fonction__button {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 72px;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  gap: 40px;
+}
+.fonction__button--circle {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  margin-left: -10px;
+}
+.fonction__button--circle h3 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2px;
+}
+.fonction .fa-solid {
+  color: #7e7e7e;
+}
+.fonction .fa-color {
+  color: #9356dc;
+}
+
+.location {
+  background-color: #EAEAEA;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
+.exploration {
+  background-color: #F6F6F6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0 30px 0;
+}
+.exploration__title {
+  width: 275px;
+  height: 68px;
+  text-align: center;
+}
+.exploration__paragraphe {
+  width: 315px;
+  height: 46px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #353535;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px 25px 22px 25px;
+  color: white;
+}
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+}
+footer i, footer p {
+  color: white;
+}
+footer .nav {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 7px;
+}
+footer .nav__icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button__degraded {
+  width: 218px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+.button__degraded h3 {
+  color: white;
+  margin-top: 13px;
+  text-align: center;
+}
+.button__degraded:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.index-restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+  gap: 30px;
+  padding: 30px;
+}
+.index-restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.index-restaurants__cards a {
+  width: 80%;
+}
+.index-restaurants__cards .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  height: 251px;
+  position: relative;
+}
+.index-restaurants__cards .card img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.index-restaurants__cards .card .new {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background-color: #99e2d0;
+}
+.index-restaurants__cards .card .new h3 {
+  color: #008766;
+  text-align: center;
+  margin: 5px 0 5px 0;
+}
+.index-restaurants__cards .card__content {
+  height: 25%;
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */

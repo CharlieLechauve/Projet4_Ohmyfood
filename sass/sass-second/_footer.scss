@@ -1,0 +1,29 @@
+footer {
+    background-color: $bg-footer-color;
+    width: 100%;
+    @include flex-column;
+    gap: 16px;
+    padding: 22px 25px 22px 25px;
+    color:white;
+
+    h2{
+        font-family: 'Shrikhand', sans-serif;
+    }
+
+    i, p {
+        color: white;
+    }
+
+    .nav {
+       @include flex-column;
+       color:white;
+       gap: 7px;
+
+       &__icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+       }
+
+    }
+}
