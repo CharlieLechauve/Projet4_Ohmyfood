@@ -23,14 +23,14 @@
             display:flex;
             justify-content: space-between;
             align-items: center;
+            position: relative;
             width: 100%;
 
-            .card__content--heart {
-                position: relative;
-                left: -30px;
-                width: 22px;
-                height: 21px;
-            }
+            i {
+                position: absolute;
+                right: 30px;
+                bottom: 10px;
+            } 
         }
 
         &--submenu {
@@ -50,43 +50,50 @@
                 width: 100%;
                 height: 69px;
                 display: flex;
-                align-items: center;
+                justify-content: space-between;
+                border: none;
                 @include button-shadow;
                 overflow:hidden;
-
-                &:hover + .check {
-                    margin-right: 60px;
-                }
+                padding: 0 0 0 0;
 
                 &--text {
-                    width: 100%;
-                    margin-left: 20px;
-                    margin-right: 20px;
-                    display: flex;
-                    justify-content: space-between;
-
-                    &--price {
-                        position:relative;
-                        top: 15px;
-                    }
-                }
-
-                .check {
                     height: 100%;
-                    width: 59px;
-                    border-radius: 0 15px 15px 0;
-                    background-color: $tertiary-color;
-                    margin-right: -60px;
+                    margin-left: 20px;
+                    margin-top: 14px;
+                    text-align:left; 
+                }
 
-                    .fa-circle-check {
-                        color: white;
-                        position: relative;
-                        top: 25px;
-                        left: 17px;
+                .check-price {
+                    display: flex;
+                    height: 100%;
+                    margin-right: -60px;
+                    transition: transform 250ms ease-in-out;
+
+                    .price {
+                        margin-right: 15px;
+                        padding-top: 35px;
+                    }
+
+                    .check {
+                        height: 100%;
+                        width: 59px;
+                        border-radius: 0 15px 15px 0;
+                        background-color: $tertiary-color;
+                        padding-top: 24px;
+        
+                        .fa-circle-check {
+                            color: white;
+                        }
                     }
                 }
+            }
+
+            button:hover > .check-price, button:active > .check-price {
+                transform: translate(-60px);
             }
         }
     }
 }
+
+
 
