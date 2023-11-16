@@ -1,117 +1,17 @@
-/**** Reset CSS ****/ 
-* {
-    box-sizing: border-box;
-}
+@import "./base/reset-css.scss";
 
-html {
-    font-size: 16px;
-}
-  
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-  
-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-}
+@import "./base/color.scss";
 
-a {
-    text-decoration: none;
-    color: black;
-}
+@import "./utils/mixins.scss";
 
-/*** Couleurs principales ***/
-$primary-color:#9356dc;
-$secondary-color:#ff79da;
-$tertiary-color:#99e2d0;
-$tertiary-text-color: #008766;
+@import "./layout/body.scss";
 
-/*** Couleurs Background**/
-$bg-color: #F6F6F6;
-$bg-location-color: #EAEAEA;
-$bg-card-color: #FFFFFF;
-$bg-footer-color: #353535;
+@import "./layout/header.scss";
 
-/*** Couleur dégradée ***/
-@mixin degraded {
-    background: linear-gradient($secondary-color, $primary-color);
-}
+@import "./layout/footer.scss";
 
-@mixin button-shadow {
-    box-shadow: 0px 4px 15px 0px #0000001A;
-}
+@import "./pages/index.scss";
 
-@mixin flex-column {
-    display: flex;
-    flex-direction: column;
-}
+@import "./pages/restaurants.scss";
 
-body {
-    width: 100%;
-    @include flex-column;
-
-    h1 {
-        font-family: 'Shrikhand', sans-serif;
-        font: italic 30px;
-        font-weight: 400;
-    }
-
-    h2, h3, p {
-        font-family: 'roboto', sans-serif;
-    }
-
-    h2 {
-        font-size: 24px;
-        font-weight: 700;
-    }
-
-    h3 {
-        font-size: 16px;
-        font-weight: 500; 
-    }
-
-    p {
-        font-size: 18px;
-        font-weight: 300; 
-    }
-}
-
-@import "sass-second/header", "sass-second/fonction", "sass-second/restaurant--menu";
-
-.location {
-    background-color: $bg-location-color;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 17px;
-}
-
-.exploration {
-    background-color: $bg-color;
-    width: 100%;
-    @include flex-column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0 30px 0;
-
-    &__title {
-        width: 275px;
-        height: 68px;
-        text-align: center;
-    }
-
-    &__paragraphe {
-        width: 315px;
-        height: 46px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-}
-
-@import "sass-second/footer", "sass-second/button-degraded", "sass-second/index-restaurant-cards";
+@import "./components/buttons.scss";

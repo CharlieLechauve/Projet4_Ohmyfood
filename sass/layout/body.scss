@@ -1,0 +1,29 @@
+body {
+    width: 100%;
+    @include flex-column;
+
+    h1 {
+        font-family: 'Shrikhand', sans-serif;
+        font: italic 30px;
+        font-weight: 400;
+    }
+
+    h2, h3, p {
+        font-family: 'roboto', sans-serif;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 16px;
+        font-weight: 500; 
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: 300; 
+    }
+}
