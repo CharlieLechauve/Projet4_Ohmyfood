@@ -1,0 +1,20 @@
+.full-heart { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient($secondary-color, $primary-color);
+    opacity: 0%;
+    transition: opacity 1s ease-in-out; 
+}
+
+.empty-heart {
+    opacity: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.card__content--heart:hover > .full-heart {
+    opacity: 100%;
+}
+
+.card__content--heart:hover > .empty-heart {
+    opacity: 0%;
+}

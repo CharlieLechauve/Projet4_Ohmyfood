@@ -13,6 +13,11 @@ header {
     position: relative;
     box-shadow: 0 0 0 0 transparent;
 
+    i {
+        font-size: 30px;
+    }
+    
+
     &--arrow {
         position:absolute;
         left:30px;
