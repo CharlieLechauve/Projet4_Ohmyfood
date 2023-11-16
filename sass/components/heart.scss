@@ -1,14 +1,17 @@
 .full-heart { 
+    background-clip: inherit;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient($secondary-color, $primary-color);
     opacity: 0%;
     transition: opacity 1s ease-in-out; 
+    z-index: 1;
 }
 
 .empty-heart {
     opacity: 100%;
     transition: opacity 0.5s ease-in-out;
+    z-index: 1;
 }
 
 .card__content--heart:hover > .full-heart {
