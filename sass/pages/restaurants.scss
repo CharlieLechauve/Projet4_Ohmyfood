@@ -81,6 +81,7 @@
                         border-radius: 0 15px 15px 0;
                         background-color: $tertiary-color;
                         padding-top: 24px;
+                        text-align: center;
         
                         .fa-circle-check {
                             color: white;
@@ -90,69 +91,60 @@
                 }
             }
 
-            button:hover > .check-price, button:active > .check-price {
+            .restaurant__menu--submenu--card:hover > .check-price {
                 transform: translate(-60px);
             }
         }
     }
 }
 
-.entree {
-    animation: entree_translate 3000ms ease-in-out
+.entree-one {
+    animation: entree-one_translate 3000ms ease-in-out
 }
 
-.menu {
-    animation: menu_translate 3000ms ease-in-out
+.entree-two {
+    animation: entree-two_translate 3000ms ease-in-out
 }
 
-.dessert {
-    animation: dessert_translate 3000ms ease-in-out
+.entree-three {
+    animation: entree-three_translate 3000ms ease-in-out
 }
 
-@keyframes entree_translate {
+
+@keyframes entree-one_translate {
     0% {
         translate:-100%;
     }
 
-    33%{
+    50% {
         translate:0;
     }
 
-    66%{
-        translate:0;
-    }
-
-    100%{
-        translate:0;
-    }
 }
-@keyframes menu_translate {
+@keyframes entree-two_translate {
     0% {
+        translate:-100%;
+    }
+
+    12%{
+        translate:-100%;
+    }
+
+    62%{
+        translate:0;
+    }
+
+}
+@keyframes entree-three_translate {
+    0% {
+        translate:-100%;
+    }
+
+    25% {
         translate:-100%;
     }
     
-    33% {
-        translate:-100%;
-    }
-
-    66%{
-        translate:0;
-    }
-
-    100%{
-        translate:0;
-    }
-}
-@keyframes dessert_translate {
-    0% {
-        translate:-100%;
-    }
-    
-    66% {
-        translate:-100%;
-    }
-
-    100%{
+    75% {
         translate:0;
     }
 }

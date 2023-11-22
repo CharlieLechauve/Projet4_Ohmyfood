@@ -1,0 +1,17 @@
+.input-search {
+    height: 49px;
+    text-align: center;
+    border: none;
+    border-top: solid 2px $bg-location-color;
+    border-bottom: solid 2px $bg-location-color;
+    font-family: 'roboto';
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $bg-location-color;
+
+    &::placeholder {
+        opacity: 1;
+        color:black;
+        
+    }
+}

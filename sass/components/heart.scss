@@ -14,10 +14,10 @@
     z-index: 1;
 }
 
-.card__content--heart:hover > .full-heart {
+.heart:hover > .full-heart {
     opacity: 100%;
 }
 
-.card__content--heart:hover > .empty-heart {
+.heart:hover > .empty-heart {
     opacity: 0%;
 }

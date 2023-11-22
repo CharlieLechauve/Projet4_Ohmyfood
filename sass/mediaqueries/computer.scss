@@ -1,0 +1,66 @@
+@media (min-width: 1025px) {
+  
+    .fonction {
+        align-items: center;
+        position: relative;
+
+        &__list {
+        width: 100%;
+        max-width: 1053px;
+        flex-direction: row;
+        gap: 20px;
+        }
+
+        &__title {
+        width: 100%;
+        max-width: 1053px;
+        }
+
+        &__button {
+        width:33%;
+        gap: 20px;
+        }
+    }
+
+    .index-restaurants {
+        align-items: center;
+        position: relative;
+
+        &__cards {
+            width: 100%;
+            max-width: 1053px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__title {
+            width: 100%;
+            max-width: 1053px;
+            }
+
+        .card {
+            width: 48%;
+        }
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        padding: 30px 25px 30px 25px;
+
+        .nav {
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+
+            &__margin {
+                margin-right: 40px;
+            }
+        }
+
+        h2 {
+            margin-left: 40px;
+        }
+    }
+
+}

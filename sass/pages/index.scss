@@ -5,6 +5,11 @@
     gap: 30px;
     padding: 24px;
 
+    &__list {
+        @include flex-column;
+        gap: 30px;
+    }
+
     &__button {
         display:flex;
         align-items: center;
@@ -14,6 +19,7 @@
         background-color: $bg-color;
         @include button-shadow;
         gap: 40px;
+        margin-left:10px;
 
         &--circle {
             width: 24px;
@@ -21,12 +27,12 @@
             border-radius: 50%;
             background-color: $primary-color;
             margin-left: -10px;
+            padding-top: 4px;
 
-            h3 {
+            p {
                 color:white;
                 text-align: center;
                 font-weight: bold;
-                margin-top:2px;
             }
         }
     }
@@ -47,7 +53,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 17px;
+    gap: 5px;
 }
 
 .exploration {
@@ -59,7 +65,7 @@
     padding: 30px 0 30px 0;
 
     &__title {
-        width: 275px;
+        max-width: 654px;
         height: 68px;
         text-align: center;
     }
@@ -82,43 +88,49 @@
         @include flex-column;
         gap: 20px;
 
-        a {
-            width: 100%;
-        }
-
         .card {
-            @include flex-column;
-            @include button-shadow;
-            background-color: $bg-card-color;
-            border-radius: 15px;
+            width: 100%;
             height: 251px;
-            position: relative;
-
-            img {
-                width: 100%;
-                height:75%;
-                object-fit:cover;
-                border-radius: 15px 15px 0 0;
-            }
+            position:relative;
 
             .new {
                 position: absolute;
                 top: 10px;
                 right: 10px; 
-                width: 80px;
-                height: 29px;
                 border-radius:2px;
                 background-color: $tertiary-color;
+                padding: 0px 5px 0px 5px;
 
-                h3 {
+                p {
                     color: $tertiary-text-color;
                     text-align: center;
+                    font-weight:500;
                     margin: 5px 0 5px 0;
                 }
             }
 
-            .old {
-                position: none;
+            .heart i {
+                font-size:20px;
+                position: absolute;
+                right: 24px;
+                bottom: 18px;
+            
+            }
+
+            a {
+                @include flex-column;
+                @include button-shadow;
+                background-color: $bg-card-color;
+                border-radius: 15px;
+                width: 100%;
+                height: 100%;
+    
+                img {
+                    width: 100%;
+                    height:75%;
+                    object-fit:cover;
+                    border-radius: 15px 15px 0 0;
+                }
             }
 
             &__content {
@@ -127,16 +139,6 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
-                &--heart {
-                    position: relative;
-
-                    i {
-                        font-size:20px;
-                        position: absolute;
-                        right: 10px;
-                    }
-                }
             }
         }
     }
