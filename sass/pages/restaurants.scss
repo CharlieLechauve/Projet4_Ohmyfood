@@ -1,4 +1,5 @@
 .restaurant {
+
     img {
         width: 100%;
         height: 275px;
@@ -18,6 +19,7 @@
         justify-content: center;
         align-items: center;
         gap: 20px;
+        overflow:hidden;
 
         &--title {
             display:flex;
@@ -25,6 +27,12 @@
             align-items: center;
             position: relative;
             width: 100%;
+
+            .heart {
+                height:50px;
+                width: 50px;
+                position: relative;
+            }
 
             i {
                 position: absolute;
@@ -61,13 +69,20 @@
                     height: 100%;
                     margin-left: 20px;
                     margin-top: 14px;
-                    text-align:left; 
+                    text-align:left;
+                    max-width: 60%;
+
+                    p, h3 {
+                        text-overflow: ellipsis;
+                        overflow:hidden;
+                        white-space: nowrap;
+                    }
                 }
 
                 .check-price {
                     display: flex;
                     height: 100%;
-                    margin-right: -60px;
+                    translate: 60px;
                     transition: transform 250ms ease-in-out;
 
                     .price {
@@ -98,20 +113,20 @@
     }
 }
 
-.entree-one {
-    animation: entree-one_translate 3000ms ease-in-out
+.entree {
+    animation: entree_translate 3000ms ease-in-out
 }
 
-.entree-two {
-    animation: entree-two_translate 3000ms ease-in-out
+.plat {
+    animation: plat_translate 3000ms ease-in-out
 }
 
-.entree-three {
-    animation: entree-three_translate 3000ms ease-in-out
+.dessert {
+    animation: dessert_translate 3000ms ease-in-out
 }
 
 
-@keyframes entree-one_translate {
+@keyframes entree_translate {
     0% {
         translate:-100%;
     }
@@ -121,7 +136,7 @@
     }
 
 }
-@keyframes entree-two_translate {
+@keyframes plat_translate {
     0% {
         translate:-100%;
     }
@@ -135,7 +150,7 @@
     }
 
 }
-@keyframes entree-three_translate {
+@keyframes dessert_translate {
     0% {
         translate:-100%;
     }

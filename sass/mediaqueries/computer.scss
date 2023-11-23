@@ -63,4 +63,19 @@
         }
     }
 
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+
+        &__menu {
+            align-self: center;
+            max-width: 1053px;
+
+            &--title {
+                justify-content: center;
+                gap: 60px;
+            }
+        }
+    }
+
 }

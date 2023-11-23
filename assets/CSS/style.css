@@ -45,6 +45,9 @@ body p {
   font-size: 18px;
   font-weight: 300;
 }
+body .restaurant-title {
+  font-family: "shrikhand", sans-serif;
+}
 body .fonction-number {
   font-size: 14px;
   font-weight: 500;
@@ -278,6 +281,7 @@ footer .nav__icon {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  overflow: hidden;
 }
 .restaurant__menu--title {
   display: flex;
@@ -285,6 +289,11 @@ footer .nav__icon {
   align-items: center;
   position: relative;
   width: 100%;
+}
+.restaurant__menu--title .heart {
+  height: 50px;
+  width: 50px;
+  position: relative;
 }
 .restaurant__menu--title i {
   position: absolute;
@@ -320,11 +329,17 @@ footer .nav__icon {
   margin-left: 20px;
   margin-top: 14px;
   text-align: left;
+  max-width: 60%;
+}
+.restaurant__menu--submenu--card--text p, .restaurant__menu--submenu--card--text h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .restaurant__menu--submenu--card .check-price {
   display: flex;
   height: 100%;
-  margin-right: -60px;
+  translate: 60px;
   transition: transform 250ms ease-in-out;
 }
 .restaurant__menu--submenu--card .check-price .price {
@@ -347,19 +362,19 @@ footer .nav__icon {
   transform: translate(-60px);
 }
 
-.entree-one {
-  animation: entree-one_translate 3000ms ease-in-out;
+.entree {
+  animation: entree_translate 3000ms ease-in-out;
 }
 
-.entree-two {
-  animation: entree-two_translate 3000ms ease-in-out;
+.plat {
+  animation: plat_translate 3000ms ease-in-out;
 }
 
-.entree-three {
-  animation: entree-three_translate 3000ms ease-in-out;
+.dessert {
+  animation: dessert_translate 3000ms ease-in-out;
 }
 
-@keyframes entree-one_translate {
+@keyframes entree_translate {
   0% {
     translate: -100%;
   }
@@ -367,7 +382,7 @@ footer .nav__icon {
     translate: 0;
   }
 }
-@keyframes entree-two_translate {
+@keyframes plat_translate {
   0% {
     translate: -100%;
   }
@@ -378,7 +393,7 @@ footer .nav__icon {
     translate: 0;
   }
 }
-@keyframes entree-three_translate {
+@keyframes dessert_translate {
   0% {
     translate: -100%;
   }
@@ -541,6 +556,18 @@ footer .nav__icon {
   }
   footer h2 {
     margin-left: 40px;
+  }
+  .restaurant {
+    display: flex;
+    flex-direction: column;
+  }
+  .restaurant__menu {
+    align-self: center;
+    max-width: 1053px;
+  }
+  .restaurant__menu--title {
+    justify-content: center;
+    gap: 60px;
   }
 }
 
